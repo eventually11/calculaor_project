@@ -1,5 +1,5 @@
 # calculaor_project
-This is a simple calculator application built with Tkinter for the GUI and includes unit tests to ensure the functionality of the calculator.
+This is a simple calculator application built with Tkinter for the GUI and includes unit tests to ensure the functionality of the calculator.The tests are written using the unittest framework and include coverage reporting.
 
 # Table of Contents
 Setup
@@ -22,6 +22,22 @@ To run the application, you can use the following command. The application also 
 
 python main.py --equation "2+2"
 
+# Running Tests
+python calculator_test.py --report <path_to_save_report> --coverage-dir <path_to_save_coverage_report>
+After running the tests, a CSV report of the test results will be saved to the specified path. Additionally, an HTML coverage report will be generated in the specified directory.
+
 # Requirements
 Python 3.6+
 Tkinter (usually included with Python)
+pandas
+coverage
+argparse
+
+
+# Directory Structure
+advanced-calculator/
+│
+├── calculator.py
+├── calculator_test.py
+├── README.md
+└── requirements.txt
