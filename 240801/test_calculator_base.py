@@ -1,5 +1,6 @@
 import unittest
 import pandas as pd
+import os
 from calculator_base import CalculatorBase
 
 class TestCalculatorBase(unittest.TestCase):
@@ -68,8 +69,11 @@ class TestCalculatorBase(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         df = pd.DataFrame(cls.results)
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        csv_path = os.path.join(current_dir, 'test_calculator_base_report.csv')
+        df.to_csv(csv_path, index=False)
         print(df)
         return df
 
 if __name__ == "__main__":
-    df = unittest.main()
+    unittest.main()
