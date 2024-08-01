@@ -1,1 +1,7 @@
-Expression,Result
+Test Name,Result,Expected,Passed
+test_addition,4,4,True
+test_complex_expression,20,20,True
+test_division_by_zero,error,error,True
+test_invalid_expression,error,error,True
+test_multiplication,12,12,True
+test_subtraction,2,2,True
