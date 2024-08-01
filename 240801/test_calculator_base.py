@@ -1,3 +1,10 @@
+'''This script ensures that the CalculatorBase class is thoroughly 
+tested and that any issues are documented 
+and easily accessible through the generated CSV report.
+'''
+
+
+
 import unittest
 import pandas as pd
 import os

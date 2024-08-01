@@ -1,7 +1,0 @@
-Test Name,Expected Result,Actual Result,Passed
-Addition,4,4,True
-Clear,,,True
-Combined Operations,7,7,True
-Division by Zero,error,error,True
-Invalid Operation,error or 7,7,True
-Multiplication,25,25,True
